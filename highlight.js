@@ -1,7 +1,6 @@
 function highlightHTMLContent(htmlContent, plainText, plainTextPositions) {
   plainTextPositions.forEach(({ start, end }) => {
 
-    // htmlContent = htmlContent.replaceAll("<br>", "<br> ");
     htmlContent = htmlContent.replaceAll("><", "> <");
 
     let i = 0, j = 0;

@@ -7,4 +7,3 @@ test.each(cases)(
         expect(highlightHTMLContent(htmlContent, plainText, plainTextPositions)).toBe(output);
     }
 );
-document.getElementById("root").innerHTML = highlightHTMLContent(cases[0][0], cases[0][1], cases[0][2])
